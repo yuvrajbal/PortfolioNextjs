@@ -87,6 +87,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="">
+      <head>
+        {/* Control Safari status bar appearance */}
+        <meta
+          name="theme-color"
+          content="#ffffff"
+          media="(prefers-color-scheme: light)"
+        />
+        <meta
+          name="theme-color"
+          content="#18181b"
+          media="(prefers-color-scheme: dark)"
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white dark:bg-zinc-900`}
       >
