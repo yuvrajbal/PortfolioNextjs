@@ -125,7 +125,7 @@ export default function ContactMe() {
       setBody("");
       setChatOpen(false); // Close the form on success
       toast.success("Message sent successfully!", {
-        description: "I&apos;ll get back to you soon!",
+        description: "I'll get back to you soon!",
       });
     } catch (err) {
       console.error("Error while sending message:", err);
